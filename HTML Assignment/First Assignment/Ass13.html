@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>My HTML Page with Side Menu and Nav Bar</title>
+    <style>
+      /* Style for side menu */
+      .sidenav {
+        height: 50%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 60px;
+        left: 0;
+        background-color: #3148de;
+        overflow-x: hidden;
+        padding-top: 20px;
+        margin-left: 10px;
+      }
+
+      /* Style for navigation links in side menu */
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        display: block;
+      }
+
+      /* Style for navigation links on hover */
+      .sidenav a:hover {
+        color: #fff;
+      }
+
+      /* Style for the main content */
+      .main {
+        margin-left: 200px; /* Same width as the sidebar */
+        padding: 70px 40px;
+      }
+
+      /* Style for the navigation bar */
+      .navbar {
+        overflow: hidden;
+        background-color: #3148de;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      /* Style for navigation links in the nav bar */
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      /* Style for navigation links on hover */
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .cmpName{
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+      <div class="cmpName">Yash Tech</div>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      
+    </div>
+
+    <!-- Side menu -->
+    <div class="sidenav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+      <h1>Welcome to my HTML page</h1>
+      <p>This is an example of a page with a side menu and a navigation bar.</p>
+    </div>
+  </body>
+</html>

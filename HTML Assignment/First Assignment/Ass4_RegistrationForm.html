@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employee Registration</title>
+    <style>
+        table, th, td {
+  border: 1px solid black;
+  background-color: lightgray;
+}
+    </style>
+  
+  </head>
+  <body>
+    <section>
+    <h1>Employee Registration</h1>
+    <form action="" method="post">
+      <table>
+        <tr>
+          <th>First Name:</th>
+          <td><input type="text" name="firstname" required></td>
+        </tr>
+        <tr>
+          <th>Last Name:</th>
+          <td><input type="text" name="lastname" required></td>
+        </tr>
+        <tr>
+          <th>Password:</th>
+          <td><input type="password" name="password" required></td>
+        </tr>
+        <tr>
+            <th>ReEnter Password:</th>
+            <td><input type="password" name="password" required></td>
+        </tr>
+        
+        <tr>
+            <th>Email:</th>
+            <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+            <th>Mobile:</th>
+            <td><input type="number" name="mobile" max = "10" required></td>
+        </tr>
+        <tr>
+            <th>Address:</th>
+            <td><textarea cols="80" rows="5" value="address"></textarea></td>
+        </tr>
+        <tr>
+            <th>Gender:</th>
+            <td><input type="radio" name="male" value="Male"/> Male <input type="radio" name="female" value="Female"/> Female</td>
+        </tr>
+        <tr>
+            <th>Hobbies:</th>
+            <td><input type="checkbox" id="hobby1" name="hobby1" value="Cricket">
+                <label for="hobby1"> Cricket</label>
+                <input type="checkbox" id="hobby2" name="hobby2" value="FootBall">
+                <label for="hobby2"> FootBall</label>
+            </td>
+        </tr>
+        <tr>
+            <th>Selecy DOB:</th>
+            <td><input type="date" id="DOB" name="DOB"/> </td> 
+        </tr>
+        <tr>
+            <th>Selecy Country:</th>
+            <td><select name="Country" id="Country">
+                <option value="0">Select Your Country</option>
+                <option value="India">India</option>
+                <option value="America">America</option>
+                <option value="Japan">Japan</option>
+                <option value="Austrilia">Austrilia</option>
+              </select></td> 
+        </tr>
+        <tr>
+            <th>Upload Your Pic:</th>
+            <td><input type="file" id="myFile" name="filename"></td> 
+        </tr>
+        
+        
+        <tr>            
+          <td colspan="2"><input type="submit" value="Save My Data" id="save"/>
+            <input type="submit" value="Reset My Data" id="reset"/></td>
+        </tr>
+      </table> 
+    </form>
+  </section>
+  
+    
+  </body>
+</html>

@@ -1,0 +1,129 @@
+/* || General setup */
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 10px;    
+  }
+  
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* || typography */
+  
+  h1, h2, h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #2a2a2a;
+  }
+  
+  dd, input, li {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #2a2a2a;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(222, 9, 9);
+    font-family: 'Courier New', Courier, monospace;
+    
+  }
+  
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 2.2rem;
+  }
+  
+  dd, li {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  
+  /* || header layout */
+  
+  nav, article, aside, footer {
+    background-color: white;
+    padding: 1%;
+  }
+  
+  nav {
+    height: 50px;
+    background-color: #53d6e4;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+  }
+  
+  nav li {
+    display: inline - block;
+    text-align: center;
+    flex: 1;
+  }
+  
+  nav a {
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: black;
+  }
+   
+  
+  input {
+    font-size: 1.6rem;
+    height: 32px;
+  }
+  
+  input[type="search"] {
+    flex: 3;
+  }
+  
+  input[type="submit"] {
+    flex: 1;
+    margin-left: 1rem;
+    background: #333;
+    border: 0;
+    color: white;
+  }
+  
+  /* || main layout */
+  
+  div {
+    display: flex;
+  }
+  
+  article {
+    flex: 5;
+    margin-right: 10px;
+  }
+  
+  aside {
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #53d6e4;
+  }
+  
+  aside li {
+    padding-bottom: 20px;
+  }
+  
+  footer {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
