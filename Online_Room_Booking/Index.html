@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>
+        Online Room Booking System
+    </title>
+    <style>
+        .border{border-style: solid;
+                margin-right: 50%;
+        
+                }
+        .borderdiv{
+             
+            border-style: inset;  
+            width: 50%;
+             height: 50%;
+             display: inline-block;
+             
+            
+        }
+        
+        
+    </style>
+    <script>
+        JsonObj = {};
+        JsonObjArr = [];
+    </script>
+</header>
+
+<body>
+    
+        <div id="infoDiv" class="border">
+        <label>From Date: </label><input type="Date" id="fromDt"></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>To Date: </label><input type="Date" id="ToDt"></input><br /><br /><br />
+        <label>Purpose: </label><input type="text" id="purpose"></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>Number of People Expected: </label><input type="number" id="numOfPeople"></input><br /><br /><br />
+        <label>Employee Id: </label><input type="number" id="EmpId"></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>Phone Number: </label><input type="number" id="mobNum"></input><br /><br /><br />
+        <label>Room Type: </label>
+        <select name="rooms" id="rooms">
+            <option value="">Select room Type</option>
+            <option value="Delux">Delux</option>
+            <option value="A/C Rooms">A/C Rooms</option>
+            <option value="Non-A/C Rooms">Non-A/C Rooms</option>
+        </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>Duration (in Days): </label>
+        <input type="number" id="duration"></input><br /><br /><br />
+        <button type="submit" onclick="submitValues()">Submit</button>
+    </div>
+    <hr />
+    <div id="infoCardDiv"></div>
+</body>
+<script>
+
+    function submitValues() {
+
+        var fromDate = document.getElementById("fromDt").value;
+        var toDate = document.getElementById("ToDt").value;
+        var purpose = document.getElementById("purpose").value;
+        var NumberofPeople = document.getElementById("numOfPeople").value;
+        var empId = document.getElementById("EmpId").value;
+        var MobNum = document.getElementById("mobNum").value;
+        var roomType = document.getElementById("rooms").value;
+        var duration = document.getElementById("duration").value;
+
+
+
+        JsonObj.fromDate = fromDate;
+        JsonObj.toDate = toDate;
+        JsonObj.purpose = purpose;
+        JsonObj.NumberofPeople = NumberofPeople;
+        JsonObj.empId = empId;
+        JsonObj.MobNum = MobNum;
+        JsonObj.roomType = roomType;
+        JsonObj.duration = duration;
+
+        JsonObjArr.push(JsonObj);
+
+        console.log(JsonObjArr);
+        var i = JsonObjArr.length - 1;
+        var records = '<div id="records" class="borderdiv">'
+            + '<label>From Date: </label><input type="Date" id="record_fromDt" value = ' + JsonObjArr[i].fromDate + '></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+            + '<label>To Date:  </label><input type="Date" id="record_ToDt" value = ' + JsonObjArr[i].toDate + '></input><br/><br/><br/>'
+            + '<label>Purpose:  </label><input type="text" id="purposeToStay" value=' + JsonObjArr[i].purpose + '></input><hr/>'
+            + '</div>'
+        document.getElementById("infoCardDiv").innerHTML += records
+
+
+
+    }
+</script>
+
+</html>
